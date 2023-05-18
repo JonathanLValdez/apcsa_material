@@ -1,9 +1,7 @@
-public class Driver{
-
-    public static void main(String[] arg)
-    {
-      	// This is a max heap
-        MyHeap heap = new MyHeap(14);
+public class Driver {
+    public static void main(String[] args) {
+        // This is a max heap
+        Myheaps heap = new Myheaps(14);
         heap.insert(10);
         heap.insert(7);
         heap.insert(26);
@@ -12,8 +10,10 @@ public class Driver{
         heap.insert(20);
         heap.insert(15);
 
+        System.out.println("Array elements before sorting:");
         heap.print();
         System.out.println("The deleted value is " + heap.deleteRoot());
         heap.print();
+        heap.heapSort();
     }
 }
